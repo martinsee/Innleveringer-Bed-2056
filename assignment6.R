@@ -46,8 +46,7 @@ df2 <- df %>%
   group_by(Year,Product) %>%
   summarise(prod_sales = sum(Sales), share_of_yearly = sum(Sales)/yearly_sales*100)
 
-df2 %>%
-  group_by(Product)
+df2 
 
 #2
 ggplot(df2) +
